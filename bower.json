@@ -1,0 +1,23 @@
+{
+    "name": "backbone_contacts_app",
+    "version": "0.0.1",
+    "authors": [
+        "Supriya Gadre"
+    ],
+    "description": "test app",
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "jquery": "latest",
+        "underscore": "latest",
+        "backbone": "latest",
+        "aura": "latest",
+        "bootstrap": "latest"
+    }
+}

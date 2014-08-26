@@ -1,0 +1,27 @@
+.title {
+    display: inline-block;
+    font-size: 1.7em;
+    font-weight: bold;
+    padding: 5px 15px;
+}
+.panel-default>.panel-heading {
+    color: #333;
+    background-color: #f5f5f5;
+    border-color: #ddd;
+}
+.c-list {
+    padding: 0px;
+    min-height: 44px;
+}
+.panel-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+.display-details:hover{
+    background-color:#ddd;
+}
+.fixed-dimensions{
+    border-bottom: 1px solid #ccc;
+}

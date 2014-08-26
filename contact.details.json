@@ -1,0 +1,63 @@
+{
+    "details":[
+        {
+            "id":1,
+            "name":"XYZ",
+            "number":9987546789,
+            "photo":"images/img1.jpg",
+            "address":"something something",
+            "age": 25,
+            "company":"synerzip"
+
+        },
+        {
+            "id":2,
+            "name":"ABC",
+            "number":9987545761,
+            "photo":"images/img2.jpg",
+            "address":"something else",
+            "age": 22,
+            "company":"synerzip"
+        },
+        {
+            "id":3,
+            "name":"XYZ",
+            "number":9987546789,
+            "photo":"images/img3.jpg",
+            "address":"something something",
+            "age": 25,
+            "company":"synerzip"
+
+        },
+        {
+            "id":4,
+            "name":"ABC",
+            "number":9987545761,
+            "photo":"images/img4.jpg",
+            "address":"something else",
+            "age": 22,
+            "company":"synerzip"
+        },
+        {
+            "id":5,
+            "name":"XYZ",
+            "number":9987546789,
+            "photo":"images/img5.jpg",
+            "address":"something something",
+            "age": 25,
+            "company":"synerzip"
+
+        },
+        {
+            "id":6,
+            "name":"ABC",
+            "number":9987545761,
+            "photo":"images/img6.jpg",
+            "address":"something else",
+            "age": 22,
+            "company":"synerzip"
+        }
+
+    ]
+
+}
