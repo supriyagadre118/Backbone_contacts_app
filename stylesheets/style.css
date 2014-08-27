@@ -24,4 +24,10 @@
 }
 .fixed-dimensions{
     border-bottom: 1px solid #ccc;
+    height:100px;
+    width:100%;
+}
+.panel-width{
+    width:50% !important;
+    text-align: center;
 }

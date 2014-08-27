@@ -1,49 +1,53 @@
 /**
  * Created by supriyag on 26-08-2014.
  */
-define(["contacts.core","text!./templates/contact.list.html","./collection/contact.details","./model/contact.details","./view/contact.list","./view/contact.details.modal"],
-    function(contacts,contactListTpl,contactCollection,contactModel,contactView,contactDetail){
-           return {
 
-               template : _.template(contactListTpl),
+define(['contacts.core','text!./templates/contact.list.wrapper.html','./collection/contacts.collection','./view/contact.item.view','./view/contact.details.modal'],
+    function (contacts,contactListWrapperTpl,contactsCollection,contactItemView,contactDetailsModalView) {
+        'use strict';
+        return {
+            template : _.template(contactListWrapperTpl),
+            $el : 'main-div',
+            initialize : function(options){
+                this.options = options || {};
+                _.bindAll(this,'render','showDetails');
+                var self = this;
+                this.sandbox.on('show.details',this.showDetails);
+                // fetch from collection
+                this.contactsCollection = new contactsCollection();
+                this.contactsCollection.fetch({
+                    success: function (r) {
+                        self.createContactItem(r.models[0].attributes.details);
+                    }
+                });
+                this.render();
+            },
+            render : function(){
+                this.$el.html(this.template());
+            },
+            createContactItem : function(contactItems){
+                var self = this;
+                // iterate over this array
+                _.each(contactItems,function(item){
+                    // create view of this single element
+                    self.createItemView(item);
+                })
+            },
+            createItemView : function(contact){
+                // create view here
+                var contactView = new contactItemView({
+                    parentEl : this.sandbox.dom.find('#contact-body'),
+                    item : contact
+                });
+            },
+            showDetails : function(payload){
+                console.log(payload);
 
-               initialize : function(options){
-                   var self = this;
-                   console.log('i am initialized');
-                   this.options = options || {};
-                   this.contactCollection = new contactCollection();
-                   this.contactCollection.fetch({
-                       success: function (r) {
-                           _.each(r.models, function (resultItem) {
-                               // create each view
-                               self.createContactRow(resultItem.attributes)
-
-                           });
-                       }
-                   });
-                   this.render();
-                   this.sandbox.on('show.details',this.openModal)
-               },
-               render: function () {
-                   this.html(this.template());
-               },
-               createContactRow : function(record){
-                   // create view
-                   var myRecord = new contactView({
-                       parentEl: this.sandbox.dom.find('#contact-body'),
-                       item: record
-                   });
-               },
-               openModal : function(payload){
-                   console.log('open modal',payload);
-                   // create modal view
-                   var myModal = new contactDetail({
-                       parentEl: this.sandbox.dom.find('#contact-details-modal'),
-                       index : payload
-                   });
-                   contacts.sandbox.$('#contact-details-modal').modal('show');
-               }
-           }
-    }
-
-);
+                var myModal = new contactDetailsModalView({
+                    parentEl: this.sandbox.dom.find('.modal-body'),
+                    record : payload
+                });
+                contacts.sandbox.$('.modal').modal('show');
+            }
+        }
+    });

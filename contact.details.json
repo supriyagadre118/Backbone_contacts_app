@@ -2,60 +2,97 @@
     "details":[
         {
             "id":1,
-            "name":"XYZ",
+            "name":"Stephen A. Gil",
             "number":9987546789,
             "photo":"images/img1.jpg",
-            "address":"something something",
+            "address":"DieSachbearbeiter Schönhauser Allee 167c 10435 Berlin Germany",
             "age": 25,
-            "company":"synerzip"
+            "company":"Synerzip"
 
         },
         {
             "id":2,
-            "name":"ABC",
+            "name":"Gloria R. Maurin",
             "number":9987545761,
             "photo":"images/img2.jpg",
-            "address":"something else",
+            "address":"DieSachbearbeiter Schönhauser Allee 167c 10435 Berlin Germany",
             "age": 22,
-            "company":"synerzip"
+            "company":"Synerzip"
         },
         {
             "id":3,
-            "name":"XYZ",
+            "name":"Joel G. Thomas",
             "number":9987546789,
             "photo":"images/img3.jpg",
-            "address":"something something",
+            "address":"DieSachbearbeiter Schönhauser Allee 167c 10435 Berlin Germany",
             "age": 25,
-            "company":"synerzip"
+            "company":"Synerzip"
 
         },
         {
             "id":4,
-            "name":"ABC",
+            "name":"Barbara T. Gehrke",
             "number":9987545761,
             "photo":"images/img4.jpg",
-            "address":"something else",
+            "address":"DieSachbearbeiter Schönhauser Allee 167c 10435 Berlin Germany",
             "age": 22,
-            "company":"synerzip"
+            "company":"Synerzip"
         },
         {
             "id":5,
-            "name":"XYZ",
+            "name":"Steven A. Perrone",
             "number":9987546789,
             "photo":"images/img5.jpg",
-            "address":"something something",
+            "address":"DieSachbearbeiter Schönhauser Allee 167c 10435 Berlin Germany",
             "age": 25,
-            "company":"synerzip"
+            "company":"Synerzip"
 
         },
         {
             "id":6,
-            "name":"ABC",
+            "name":"Raymond D. Nichols",
             "number":9987545761,
             "photo":"images/img6.jpg",
-            "address":"something else",
+            "address":"DieSachbearbeiter Schönhauser Allee 167c 10435 Berlin Germany",
             "age": 22,
-            "company":"synerzip"
+            "company":"Synerzip"
+        },
+        {
+            "id":7,
+            "name":"Lucie Weberová",
+            "number":9987545761,
+            "photo":"images/img7.jpg",
+            "address":"DieSachbearbeiter Schönhauser Allee 167c 10435 Berlin Germany",
+            "age": 22,
+            "company":"Synerzip"
+        },
+        {
+            "id":8,
+            "name":"Matthew Willshire",
+            "number":9987546789,
+            "photo":"images/img8.jpg",
+            "address":"DieSachbearbeiter Schönhauser Allee 167c 10435 Berlin Germany",
+            "age": 25,
+            "company":"Synerzip"
+
+        },
+        {
+            "id":9,
+            "name":"Robert J. Crawford",
+            "number":9987545761,
+            "photo":"images/img9.jpg",
+            "address":"DieSachbearbeiter Schönhauser Allee 167c 10435 Berlin Germany",
+            "age": 22,
+            "company":"Synerzip"
+        },
+        {
+            "id":10,
+            "name":"Václav Straka",
+            "number":9987545761,
+            "photo":"images/img10.jpg",
+            "address":"DieSachbearbeiter Schönhauser Allee 167c 10435 Berlin Germany",
+            "age": 22,
+            "company":"Synerzip"
         }
 
     ]
