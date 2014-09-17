@@ -9,7 +9,7 @@ requirejs.config({
         'contacts.core' : 'contacts_core/contacts.core',
         /*Aura extensions*/
         'backbone.ext' : 'extensions/aura.backbone',
-        'jquery.ext' : 'extensions/aura.query',
+        'jquery.ext' : 'extensions/aura.jquery',
         'config': 'extensions/config',
         /*other libraries*/
         'jquery' : 'bower_components/jquery/jquery.min',

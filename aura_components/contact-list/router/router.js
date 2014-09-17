@@ -13,7 +13,8 @@ define([],
                 "folder/:name":       "openFolder",
                 "folder/:name-:mode": "openFolder"
             },
-            initialize : function(){
+            initialize : function(options){
+                console.log('this is string >> ',options.headerString);
                 console.log('initialized...');
             }
 
