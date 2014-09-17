@@ -19,7 +19,7 @@ define(function () {
             },
             initialize: function (app) {
                 Backbone = require('backbone');
-                Router = Backbone.Router.extend({
+                /*Router = Backbone.Router.extend({
                     initialized: function () {
                         console.log("router initialized..");
                     },
@@ -30,7 +30,7 @@ define(function () {
                     }
                 });
                 app.sandbox.router = new Router();
-                Backbone.history.start({ root: '/' });
+                Backbone.history.start({ root: '/' });*/
             }
         }
     }

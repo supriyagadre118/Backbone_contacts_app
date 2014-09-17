@@ -9,7 +9,7 @@ requirejs.config({
         'contacts.core' : 'contacts_core/contacts.core',
         /*Aura extensions*/
         'backbone.ext' : 'extensions/aura.backbone',
-        'jquery.ext' : 'extensions/aura.jquery',
+        'jquery.ext' : 'extensions/aura.query',
         'config': 'extensions/config',
         /*other libraries*/
         'jquery' : 'bower_components/jquery/jquery.min',
@@ -24,5 +24,6 @@ requirejs.config({
 require(['contacts.core','jquery'],function(contacts,$){
     var start = contacts.start('body').done(function(){
         contacts.sandbox.emit( 'route:home',_.object(['route'],['#/home']) );
+
     });
 });

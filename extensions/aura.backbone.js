@@ -23,12 +23,12 @@ define(function () {
                         console.log("router initialized..");
                     },
                     routes: {
-                        '': 'fnHome',
-                        'home': 'fnHome'
+                        '': 'home'
                     }
                 });
-                app.sandbox.router = new Router();
+                var router = new Router();
                 Backbone.history.start({ root: '/' });
+                console.log(router);
             }
         }
     }
